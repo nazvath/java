@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+<input type="text" id="text1">
+<input type="text" id="text2">
+<button onclick="display()"> +</button>
+<button onclick="display1()"> -</button>
+<button onclick="display2()"> * </button>
+<button onclick="display3()"> / </button>
+
+<input type="text" id="text3">
+
+<script>
+function display()
+{
+var a,b,c;
+a=Number(document.getElementById("text1").value)
+b=Number(document.getElementById("text2").value)
+c=a+b
+document.getElementById("text3").value=c
+document.getElementById("demo").innerHTML=c
+}
+function display1()
+{
+var a,b,c;
+a=Number(document.getElementById("text1").value)
+b=Number(document.getElementById("text2").value)
+c=a-b
+document.getElementById("text3").value=c
+document.getElementById("demo").innerHTML=c
+
+}
+function display2()
+{
+var a,b,c
+a=Number(document.getElementById("text1").value)
+b=Number(document.getElementById("text2").value)
+c=a*b
+document.getElementById("text3").value=c
+document.getElementById("demo").innerHTML=c
+
+}
+function display3()
+{
+var a,b,c
+a=Number(document.getElementById("text1").value)
+b=Number(document.getElementById("text2").value)
+c=a/b
+document.getElementById("text3").value=c
+document.getElementById("demo").innerHTML=c
+
+}
+
+
+
+
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

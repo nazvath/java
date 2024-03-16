@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p> 
+    <input type="text" id="num1">
+    <button onclick="swi()"> check </button>
+    <input type="text" id="num2">
+   
+<script>
+
+   function swi()
+{
+let day=Number(document.getElementById("num1").value);
+let value;
+
+
+switch(day){
+case 0:
+    value= "sunday";
+    break;
+case 1:
+    value="monday";
+    break;
+case 2:
+    value="Tuesday";
+    break;
+case 3:
+    value="Wednesday";
+    break;
+case 4:
+    value="Thusday";
+    break;
+case 5:
+    value="Friday";
+    break;
+case 6:
+    value="Saturday";
+    break;
+
+default:
+           value = "not defined";
+            break;
+}
+document.getElementById("num2").value=value;
+
+}
+
+</script>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
